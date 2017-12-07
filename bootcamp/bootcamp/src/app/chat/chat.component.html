@@ -1,0 +1,19 @@
+<app-chat-header></app-chat-header>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <ul #chatItem class="message-list list-group">
+      <app-chat-item *ngFor="let msgObj of mensagens" [mensagem]="msgObj"></app-chat-item>
+    </ul>
+  </div>
+  <div class="col-md-11">
+    <textarea placeholder="Escreva sua mensagem aqui" [(ngModel)]="mensagemInserir" rows="6" #msgInputed (keydown.enter)="enviaMensagem()">
+        </textarea>
+    <small>Você digitou
+      <code>{{msgInputed.value.length}}</code> caracteres.</small>
+  </div>
+  <div class="col-md-1">
+    <button class="btn btn-primary" (click)="enviaMensagem()">Enviar</button>
+  </div>
+</div>

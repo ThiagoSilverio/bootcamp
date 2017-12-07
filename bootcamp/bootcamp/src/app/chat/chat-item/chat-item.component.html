@@ -1,0 +1,13 @@
+
+<li class="msg-li">
+  <div [ngClass]="[minhaMensagem() ? 'msg-right macro' : 'msg-left macro']">
+    <p>
+        {{mensagem['author']}}
+      </p>
+      <p>
+        {{mensagem['message']}}
+      </p>
+      <p>{{mensagem['time'] | date : "HH:mm a"}}</p>
+    </div>
+</li>
+

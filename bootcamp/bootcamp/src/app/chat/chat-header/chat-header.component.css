@@ -1,0 +1,16 @@
+p{
+  font-size: x-small;
+  position: relative;
+  font-weight: bold;
+}
+.header-time{
+  position: absolute;
+  margin: 10px;
+}
+.jumbotron{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+  border-radius: 24px;
+}
+
